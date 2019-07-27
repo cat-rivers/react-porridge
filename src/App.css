@@ -1,33 +1,58 @@
-.App {
+body {
+  font-family: "fantasy", sans-serif;
+  color: rgba(137, 90, 212, 0.651);
+  padding: 0 10vw;
+}
+
+h1 {
+  font-size: 60px;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 2.25em;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+ul {
+  font-size: 25px;
+  color: rgba(9, 10, 61, 0.774);
+  font-weight: 300;
+}
+#footer {
+  font-size: 1.25rem;
+  color: black;
+  text-align: center;
+}
+.lists {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: transparent;
+  background-image: url("https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/porridge_with_berries_50767_16x9.jpg");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lists > ul {
+  background: rgba(248, 209, 100, 0.596);
+  padding: 25px;
+  width: 100%;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style-type: none;
 }
 
-.App-link {
-  color: #61dafb;
+.lists > ul > li {
+  width: max-content;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(245, 196, 61, 0.205);
+  height: 100vh;
 }
